@@ -28,19 +28,18 @@
 def zero_and_one(s)
     s = s.gsub(/01/, "")
     s = s.gsub(/10/, "")
-    # s = s.gsub(/\s+/, "")
-    puts s.length
+    return s.length
 end
 
 puts "TEST 1"
-zero_and_one("01010") # should equal 1
+puts zero_and_one("01010") # should equal 1
 puts "TEST 2"
-zero_and_one("11101111") # should qual 6
+puts zero_and_one("11101111") # should qual 6
 puts "TEST 3"
-zero_and_one("01") # should equal 0
+puts  zero_and_one("01") # should equal 0
 puts "TEST 4"
-zero_and_one("10") # should equal 0
+puts zero_and_one("10") # should equal 0
 puts "TEST 5"
-zero_and_one("110110") # should equal 2
+puts zero_and_one("110110") # should equal 2
 puts "TEST 6"
-zero_and_one("110100") # should equal 2
+puts zero_and_one("110100") # should equal 2
