@@ -28,7 +28,7 @@
 def zero_and_one(s)
     s = s.gsub(/01/, "")
     s = s.gsub(/10/, "")
-    s = s.gsub(/\s+/, "")
+    # s = s.gsub(/\s+/, "")
     puts s.length
 end
 
